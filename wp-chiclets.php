@@ -22,7 +22,8 @@ function widget_wpchiclets_init() {
 
 		$blogname = urlencode(get_bloginfo('name'));
 		$blogurl = urlencode(get_bloginfo('url'));
-		$feedurl = urlencode(get_feed_link());
+		$feedurl = urlencode(get_feed_link('rss2'));
+		$commentsfeedurl = urlencode(get_feed_link('comments_rss2'));
 
 		print <<<EOM
 
@@ -33,7 +34,7 @@ $before_widget
       <a href="$feedurl"
 	title="Syndicate the latest posts">
       <img src="$rsspng" alt=""  /> Posts</a> |
-      <a href="http://www.tsaiberspace.net/blog/comments/feed/"
+      <a href="$commentsfeedurl"
 	title="Syndicate the latest comments">
       <img src="$rsspng" alt="" /> Comments</a>
     </li>
