@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP Chiclets
-Plugin URI: http://www.tsaiberspace.net/projects/wordpress/
+Plugin URI: http://www.tsaiberspace.net/projects/wordpress/wp-chiclets/
 Description: Sidebar widget with various RSS chiclets. Navigate to <a href="widgets.php">Presentation &rarr; Widgets</a> to add to your sidebar.
 Author: Robert Tsai
 Author URI: http://www.tsaiberspace.net/
