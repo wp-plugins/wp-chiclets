@@ -21,9 +21,8 @@ function widget_wpchiclets_init() {
 		$rsspng = get_bloginfo('url') . '/wp-includes/images/rss.png';
 
 		$blogname = urlencode(get_bloginfo('name'));
-		$blogurl = urlencode(get_bloginfo('url'));
-		$feedurl = urlencode(get_feed_link('rss2'));
-		$commentsfeedurl = urlencode(get_feed_link('comments_rss2'));
+		$feedurl = get_feed_link('rss2');
+		$commentsfeedurl = get_feed_link('comments_rss2');
 
 		print <<<EOM
 
