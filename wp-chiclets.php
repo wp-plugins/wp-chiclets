@@ -20,7 +20,8 @@ function widget_wpchiclets_init() {
 
 		$rsspng = get_bloginfo('url') . '/wp-includes/images/rss.png';
 
-		$blogname = urlencode(get_bloginfo('name'));
+		$encoded_blogname = urlencode(get_bloginfo('name'));
+
 		$feedurl = get_feed_link('rss2');
 		$commentsfeedurl = get_feed_link('comments_rss2');
 
@@ -28,45 +29,14 @@ function widget_wpchiclets_init() {
 
 $before_widget
   $before_title$wpchiclets_title$after_title
+  <!-- wp-chiclets: http://www.tsaiberspace.net/projects/wordpress/wp-chiclets/ -->
   <ul>
-    <li>
-      <a href="$feedurl"
-	title="Syndicate the latest posts">
-      <img src="$rsspng" alt=""  /> Posts</a> |
-      <a href="$commentsfeedurl"
-	title="Syndicate the latest comments">
-      <img src="$rsspng" alt="" /> Comments</a>
-    </li>
-    <li>
-      <a href="http://www.bloglines.com/sub/$feedurl"
-	title="Subscribe with Bloglines">
-      <img src="http://www.bloglines.com/images/sub_modern11.gif"
-	alt="Subscribe with Bloglines" /> </a>
-    </li>
-    <li>
-      <a href="http://us.rd.yahoo.com/my/atm/$blogname/$blogname/*http://add.my.yahoo.com/rss?url=$feedurl"
-	title="Add to My Yahoo!">
-      <img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif"
-	alt="Add to My Yahoo!" /> </a>
-    </li>
-    <li>
-      <a href="http://fusion.google.com/add?feedurl=$feedurl"
-	title="Add to Google">
-      <img src="http://buttons.googlesyndication.com/fusion/add.gif"
-	alt="Add to Google" /> </a>
-    </li>
-    <li>
-      <a href="http://www.netvibes.com/subscribe.php?url=$feedurl"
-	title="Add to netvibes">
-      <img src="http://www.netvibes.com/img/add2netvibes.gif"
-	alt="Add to netvibes" /> </a>
-    </li>
-    <li>
-      <a href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=$feedurl"
-	title="Subscribe with NewsGator">
-      <img src="http://www.newsgator.com/images/ngsub1.gif"
-	alt="Subscribe with NewsGator" /> </a>
-    </li>
+    <li><a href="$feedurl" title="Syndicate the latest posts"><img src="$rsspng" alt="" /> Posts</a> | <a href="$commentsfeedurl" title="Syndicate the latest comments"><img src="$rsspng" alt="" /> Comments</a></li>
+    <li><a href="http://www.bloglines.com/sub/$feedurl" title="Subscribe with Bloglines"><img src="http://www.bloglines.com/images/sub_modern11.gif" alt="Subscribe with Bloglines" /> </a></li>
+    <li><a href="http://us.rd.yahoo.com/my/atm/$encoded_blogname/$encoded_blogname/*http://add.my.yahoo.com/rss?url=$feedurl" title="Add to My Yahoo!"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" alt="Add to My Yahoo!" /> </a></li>
+    <li><a href="http://fusion.google.com/add?feedurl=$feedurl" title="Add to Google"><img src="http://buttons.googlesyndication.com/fusion/add.gif" alt="Add to Google" /> </a></li>
+    <li><a href="http://www.netvibes.com/subscribe.php?url=$feedurl" title="Add to netvibes"><img src="http://www.netvibes.com/img/add2netvibes.gif" alt="Add to netvibes" /> </a></li>
+    <li><a href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=$feedurl" title="Subscribe with NewsGator"><img src="http://www.newsgator.com/images/ngsub1.gif" alt="Subscribe with NewsGator" /> </a></li>
   </ul>
 $after_widget
 
