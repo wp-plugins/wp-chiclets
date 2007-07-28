@@ -3,7 +3,7 @@ Contributors: rtsai
 Tags: rss reader chiclets links social bookmarking bloglines yahoo google netvibes newsgator
 Requires at least: 2.2
 Tested up to: 2.2
-Stable tag: 1.0.1
+Stable tag: 1.1
 
 This sidebar widget provides a set of RSS chiclets for users to add your blog to their RSS reader.
 
