@@ -13,16 +13,17 @@ This sidebar widget provides a set of RSS chiclets for users to add your blog to
 
 == Installation ==
 
-1. Upload `wp-chiclets.php` to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Go to the 'Presentation' menu and add the 'WP Chiclets' widget to the sidebar
+1. Ensure that your theme is <a href="http://codex.wordpress.org/Theme_List/Widget-ready">widget-ready</a>.
+1. Ensure your WordPress installation supports widgets. Either upgrade to WordPress 2.2 or later, or download and install the appropriate <a href="http://automattic.com/code/widgets/">Widgets plugin</a>.
+1. Upload `wp-chiclets.php` to the `/wp-content/plugins/` directory.
+1. Activate the plugin through the 'Plugins' menu in WordPress.
+1. Go to the 'Presentation' menu, click on 'Widgets', and add the 'WP Chiclets' widget to the sidebar.
 
 == Frequently Asked Questions ==
 
 = Can you add another RSS chiclet? =
 
-Maybe. Let me know what it is. In the meantime, it is actually very easy to add
-another site to the plugin code.
+Maybe. Let me know what it is.
 
 == Screenshots ==
 
