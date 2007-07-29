@@ -67,5 +67,11 @@ EOM;
 		300, 90);
 }
 
+function widget_wpchiclets_deactivate() {
+	delete_option('widget_wpchiclets');
+}
+
+register_deactivation_hook(__FILE__, 'widget_wpchiclets_deactivate');
 add_action('plugins_loaded', 'widget_wpchiclets_init');
+
 ?>
