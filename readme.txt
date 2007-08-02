@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: rtsai
-Tags: rss reader chiclets links social bookmarking bloglines yahoo google netvibes newsgator
+Tags: rss, reader, chiclets, links, social, bookmarking, bloglines, yahoo, google, netvibes, newsgator
 Requires at least: 2.2
 Tested up to: 2.2
 Stable tag: 1.2
