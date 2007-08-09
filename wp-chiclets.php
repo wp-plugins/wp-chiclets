@@ -5,7 +5,7 @@ Plugin URI: http://www.tsaiberspace.net/projects/wordpress/wp-chiclets/
 Description: Sidebar widget with various RSS chiclets. Navigate to <a href="widgets.php">Presentation &rarr; Widgets</a> to add to your sidebar.
 Author: Robert Tsai
 Author URI: http://www.tsaiberspace.net/
-Version: 1.2
+Version: 1.2.1
 */
 
 function widget_wpchiclets_init() {
@@ -18,7 +18,7 @@ function widget_wpchiclets_init() {
 		$options = get_option('widget_wpchiclets');
 		$wpchiclets_title = $options['wpchiclets_title'];
 
-		$rsspng = get_bloginfo('url') . '/wp-includes/images/rss.png';
+		$rsspng = get_bloginfo('wpurl') . '/wp-includes/images/rss.png';
 
 		$encoded_blogname = urlencode(get_bloginfo('name'));
 
