@@ -5,7 +5,7 @@ Plugin URI: http://www.tsaiberspace.net/projects/wordpress/wp-chiclets/
 Description: Sidebar widget with various RSS chiclets. Navigate to <a href="widgets.php">Presentation &rarr; Widgets</a> to add to your sidebar.
 Author: Robert Tsai
 Author URI: http://www.tsaiberspace.net/
-Version: 1.2.1
+Version: 1.2.2
 */
 
 function widget_wpchiclets_init() {
@@ -41,7 +41,7 @@ $before_widget
     <li><a href="http://www.newsgator.com/ngs/subscriber/subext.aspx?url=$feedurl" title="Subscribe with NewsGator"><img src="http://www.newsgator.com/images/ngsub1.gif" alt="Subscribe with NewsGator" /> </a></li>
     <li><a href="http://feeds.my.aol.com/add.jsp?url=$feedurl" title="Add to My AOL"><img src="http://cdn.digitalcity.com/channels/icon_myaol" alt="Add to My AOL" /> </a></li>
     <li><a href="http://www.live.com/?add=$feedurl" title="Add to Windows Live Favorites"><img src="http://stc.msn.com/br/gbl/css/6/decoration/wl_add_feed.gif" alt="Add to Windows Live Favorites" /> </a></li>
-    <li><a href="http://my.msn.com/addtomymsn.armx?id=rss&ut=$feedurl" title="Add to My MSN"><img src="http://stc.msn.com/br/gbl/css/6/decoration/rss_my.gif" alt="Add to My MSN" /> </a></li>
+    <li><a href="http://my.msn.com/addtomymsn.armx?id=rss&amp;ut=$feedurl" title="Add to My MSN"><img src="http://stc.msn.com/br/gbl/css/6/decoration/rss_my.gif" alt="Add to My MSN" /> </a></li>
   </ul>
 $after_widget
 
