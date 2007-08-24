@@ -5,7 +5,7 @@ Plugin URI: http://www.tsaiberspace.net/projects/wordpress/wp-chiclets/
 Description: Sidebar widget with various RSS chiclets. Navigate to <a href="widgets.php">Presentation &rarr; Widgets</a> to add to your sidebar.
 Author: Robert Tsai
 Author URI: http://www.tsaiberspace.net/
-Version: 1.2.2
+Version: 1.2.3
 */
 
 function widget_wpchiclets_init() {
@@ -32,9 +32,9 @@ $before_widget
   <!-- wp-chiclets: http://www.tsaiberspace.net/projects/wordpress/wp-chiclets/ -->
   <ul>
     <li><a href="$feedurl" title="Syndicate the latest posts"><img src="$rsspng" alt="" /> Posts</a> | <a href="$commentsfeedurl" title="Syndicate the latest comments"><img src="$rsspng" alt="" /> Comments</a></li>
-    <li><a href="http://www.bloglines.com/sub/$feedurl" title="Subscribe with Bloglines"><img src="http://www.bloglines.com/images/sub_modern11.gif" alt="Subscribe with Bloglines" /> </a></li>
-    <li><a href="http://us.rd.yahoo.com/my/atm/$encoded_blogname/$encoded_blogname/*http://add.my.yahoo.com/rss?url=$feedurl" title="Add to My Yahoo!"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" alt="Add to My Yahoo!" /> </a></li>
     <li><a href="http://fusion.google.com/add?feedurl=$feedurl" title="Add to Google"><img src="http://buttons.googlesyndication.com/fusion/add.gif" alt="Add to Google" /> </a></li>
+    <li><a href="http://us.rd.yahoo.com/my/atm/$encoded_blogname/$encoded_blogname/*http://add.my.yahoo.com/rss?url=$feedurl" title="Add to My Yahoo!"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/my/addtomyyahoo4.gif" alt="Add to My Yahoo!" /> </a></li>
+    <li><a href="http://www.bloglines.com/sub/$feedurl" title="Subscribe with Bloglines"><img src="http://www.bloglines.com/images/sub_modern11.gif" alt="Subscribe with Bloglines" /> </a></li>
     <li><a href="http://technorati.com/faves?add=$feedurl" title="Add to Technorati Favorites"><img src="http://static.technorati.com/pix/fave/tech-fav-5.gif" alt="Add to Technorati Favorites" /> </a></li>
     <li><a href="http://www.netvibes.com/subscribe.php?url=$feedurl" title="Add to netvibes"><img src="http://www.netvibes.com/img/add2netvibes.gif" alt="Add to netvibes" /> </a></li>
     <li><a href="http://www.rojo.com/add-subscription?resource=$feedurl" title="Add to My Rojo"><img src="http://blog.rojo.com/RojoWideRed.gif" alt="Add to My Rojo" /> </a></li>
